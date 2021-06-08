@@ -118,8 +118,6 @@ print(listaArr)
 que tenga la suma total, promedio, mínimo, máximo y longitud de la lista.
 Ejemplo: ultimate_analysis ([37,2,1, -9]) debería devolver {'total': 31, 'promedio': 7.75, 'minimo': -9, 'maximo': 37, 'longitud': 4} """
 
-diccionario = {'nombre' : 'Carlos', 'edad' : 22, 'cursos': ['Python','Django','JavaScript'] }
-
 def lista(lista):
     su=0
     suma=0    
