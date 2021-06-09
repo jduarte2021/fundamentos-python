@@ -12,6 +12,9 @@ print(randInt(min=50, max=500))
 # debería imprimir un número aleatorio entre 50 y 500
 
 
+##########prueba y error, solo me funciono con randinit###########
+
+
 import random
 def randInt(min=0 , max=100):
     num = random.random(min,max)
