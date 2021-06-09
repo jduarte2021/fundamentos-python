@@ -140,8 +140,8 @@ Ejemplo: reverse_list ([37,2,1, -9]) debería devolver [-9,1,2,37] """
 
 
 def lista(lista):    
-    for i in range(len(lista)):
-        return lista[::-1]
+    return lista[::-1]
 
 listaArr=lista([-1,2,3,-4,5])
 print(listaArr)
+
