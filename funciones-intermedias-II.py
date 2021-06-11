@@ -149,16 +149,19 @@ for i in range (len(students)):
 
 """4- Itera a través de un diccionario con valores de listas """
 
+
 dojo = {
    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 
 
-elementos = dojo.items() 
-for lista in dojo: 
-    cont=len(dojo[lista])
-    print(f"{cont} - {lista}\n {dojo[lista]}")
+for objetos in dojo: 
+    cont=len(dojo[objetos])
+    print(f"{cont} - {objetos}")
+    for lista in range(len(dojo[objetos])):
+        print(dojo[objetos][lista])
+        
     
 
 
