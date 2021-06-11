@@ -155,15 +155,15 @@ dojo = {
    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 
-
-for objetos in dojo: 
-    cont=len(dojo[objetos])
-    print(f"{cont} - {objetos}")
-    for lista in range(len(dojo[objetos])):
-        print(dojo[objetos][lista])
+def printInfo(dojo):
+    for objetos in dojo: 
+        cont=len(dojo[objetos])
+        print(f"{cont} - {objetos}")
+        for lista in range(len(dojo[objetos])):
+            print(dojo[objetos][lista])
         
     
-
+printInfo(dojo)
 
         
     
