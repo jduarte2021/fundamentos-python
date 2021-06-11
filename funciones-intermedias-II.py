@@ -106,12 +106,13 @@ students = [
          {'first_name' : 'Mark', 'last_name' : 'Guillen'},
          {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
-for i in range(len(students)):
-    elementos = students[i].items() #Creamos la variable elementos que almacena key y values
-    for key,val in elementos: # Iteramos
-        print (f"{key} - {val}")
+def iterateDictionary(students):
+    for i in range(len(students)):
+        elementos = students[i].items() #Creamos la variable elementos que almacena key y values
+        for key,val in elementos: # Iteramos
+            print (f"{key} - {val}")
         
-
+iterateDictionary(students)
 
 """3- Obtén valores de una lista de diccionarios """
 
