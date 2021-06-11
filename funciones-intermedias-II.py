@@ -123,12 +123,15 @@ students = [
          {'first_name' : 'Mark', 'last_name' : 'Guillen'},
          {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
+def iterateDictionary2(key_name, some_list):
+    for elementos in some_list:
+        print(elementos[key_name])
 
-for i in range (len(students)):
-    nombre=students[i].get('first_name',"")
-    print(f"{nombre}")
+iterateDictionary2 ('first_name', students)
+iterateDictionary2 ('last_name', students)
 
-    ##Apellidos##
+
+    ##Nombre y Apellidos solo con for leyendo students##
 
 students = [
          {'first_name':  'Michael', 'last_name' : 'Jordan'},
@@ -138,7 +141,9 @@ students = [
     ]
 
 for i in range (len(students)):
+    nombre=students[i].get('first_name',"")
     apellido=students[i].get('last_name',"")
+    print(f"{nombre}")
     print(f"{apellido}")
 
 
@@ -148,9 +153,9 @@ dojo = {
    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
-#print(dojo.get)
 
-elementos = dojo.items() #Creamos la variable elementos que almacena key y values
+
+elementos = dojo.items() 
 for lista in dojo: 
     cont=len(dojo[lista])
     print(f"{cont} - {lista}\n {dojo[lista]}")
